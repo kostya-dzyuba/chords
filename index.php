@@ -55,35 +55,5 @@ echo "<h4>На данный момент уже подобрано $count пес
         </tr>
     </table>
 </div>
-<div class="center">
-    <h2>Стена</h2>
-    <p>Здесь ты можешь оставить свои комментарии и предложения,<br>расписаться или оставить контакты для обратной связи.<br>Или
-        вообще написать че угодно (не более 100 символов)</p>
-    <div class="center">
-        <form action="post.php" method="post" autocomplete="off">
-            <input name="text" placeholder="Введите ваше сообщение">
-            <div class="center">
-                <label>Введите</label>
-                <img src="image.php">
-                <input name="check" style="width: 35px" placeholder="Код">
-            </div>
-            <div class="center">
-                <input type="submit" value="Отправить">
-            </div>
-        </form>
-    </div>
-</div>
-<div class="center" style="width: 100%">
-    <h3>Посты</h3>
-    <?php
-    $result = $conn->query('select created, text from posts where not hidden order by created desc');
-    $fmt = datefmt_create('ru_RU', IntlDateFormatter::LONG, IntlDateFormatter::SHORT, null, null, 'd MMMM k:m');
-    while ($row = $result->fetch_assoc()) {
-        $created = datefmt_format($fmt, date_create($row['created']));
-        $text = $row['text'];
-        echo "<p>$created: $text</p>";
-    }
-    ?>
-</div>
 </body>
 </html>
