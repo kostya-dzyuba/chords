@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0d3be492-665e-4340-9985-3012dc740d8f" name="Hostland" url="">
+        <fileTransfer host="ftp77.hostland.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="4f13bd5f-dc4b-4366-96ed-0c5fbfdae598" name="Sprinthost" url="http://akordy.ru">
+        <fileTransfer rootFolder="/domains/akordy.ru/public_html" host="akordy.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

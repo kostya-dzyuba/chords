@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6, ul, a, pre, p, label {
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+pre, .center {
+    font-family: 'Courier New', monospace;
+    /* Центрирующие атрибуты */
+    width: fit-content;
+    margin: auto;
+}
+
+ul, pre {
+    text-align: left;
+}
+
+.search-form {
+    position: absolute;
+    right: 0;
+    margin-right: 16px;
+}
